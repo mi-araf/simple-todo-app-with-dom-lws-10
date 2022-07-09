@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Musfhiq Araf" />
+    <meta name="description" content="We love JavaScript" />
+    <title>TODO || DOM - Document Object Model</title>
+    <link rel="shortcut icon" href="./images/lit.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <section class="container">
+        <div class="logo">
+            <img src="images/lit.png" alt="Learn with Sumit" />
+        </div>
+        <h1 id="header" class="header">To-Do App</h1>
+        <h5 class="my-h">Made by &nbsp;M. ARAF</h5>
+
+        <form class="new-task-container box">
+            <label for="new-task">Add New Task: </label>
+            <input type="text" id="new-task" /> &nbsp;&nbsp;
+            <input type="submit" id="addTask" class="my-button" value="Add Task" />
+        </form>
+
+        <div class="todo-list box">
+            <h2>Incomplete Tasks</h2>
+            <ul id="items">
+                <li class="item">
+                    <input type="checkbox" /><label> Eating</label>
+                </li>
+                <li class="item">
+                    <input type="checkbox" /><label> Reading</label>
+                </li>
+                <li class="item">
+                    <input type="checkbox" /><label> Sleeping</label>
+                </li>
+            </ul>
+        </div>
+        <!--/todo-list-->
+
+        <div class="complete-list box">
+            <h2>Completed Tasks</h2>
+            <ul>
+                <li class="item">Chatting<button class="delete">Delete</button></li>
+            </ul>
+        </div>
+        <!--/complete-list-->
+
+    </section>
+    <!--/container-->
+    <footer>
+        This simple website/app has been developed using <span>HTML, CSS & vanilla JS</span>. &copy; ARAF - 2022
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
